@@ -8,3 +8,6 @@ https://github.com/GabrielBrezeanu/SP.Sg2/tree/bb4f3709eca76515d5df4009f78a543c0
 - all good
 
 Nota 10
+
+# Nota finala propusa:
+4

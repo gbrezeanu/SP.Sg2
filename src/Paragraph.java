@@ -8,4 +8,19 @@ public class Paragraph implements Element {
     public void print() {
         System.out.println("Pharagraph: "+text);
     }
+
+    @Override
+    public void add(Element e) {
+
+    }
+
+    @Override
+    public void remove(Element e) {
+
+    }
+
+    @Override
+    public Element get(int e) {
+        return null;
+    }
 }

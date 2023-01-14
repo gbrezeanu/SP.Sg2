@@ -13,7 +13,7 @@ public class Image implements Element {
     }
 
     public void print() {
-        System.out.println("Image with name: "+imageName);
+        System.out.println("Image with name: " + imageName);
     }
 
     @Override
@@ -29,5 +29,15 @@ public class Image implements Element {
     @Override
     public Element get(int e) {
         return null;
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visitImage(this);
+    }
+
+    @Override
+    public String getData() {
+        return this.imageName;
     }
 }

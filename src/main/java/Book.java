@@ -17,16 +17,20 @@ public class Book extends Section {
         System.out.println("Book: " + title);
         System.out.println();
         System.out.println("Authors:");
-        for(Author a : authors) {
+        for (Author a : authors) {
             a.print();
         }
         System.out.println();
-        for(Element e : elements) {
+        for (Element e : elements) {
             e.print();
         }
     }
 
     public void addContent(Element e) {
         elements.add(e);
+    }
+
+    public List<Author> getAuthors() {
+        return authors;
     }
 }

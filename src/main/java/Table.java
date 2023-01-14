@@ -6,7 +6,7 @@ public class Table implements Element {
     }
 
     public void print() {
-        System.out.println("Table with Title: "+title);
+        System.out.println("Table with Title: " + title);
     }
 
     @Override
@@ -22,5 +22,15 @@ public class Table implements Element {
     @Override
     public Element get(int e) {
         return null;
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visitTable(this);
+    }
+
+    @Override
+    public String getData() {
+        return this.title;
     }
 }
